@@ -6,13 +6,11 @@ from pygame.locals import *
 SCREENWIDTH = 640
 SCREENHEIGHT = 480
 
-
-active = True
-
 def main():
+    active = True
     while active:
         for event in pygame.event.get():
-            if event.type == quit():
+            if event.type == QUIT:
                 active = False
 
 if __name__ == "__main__":
